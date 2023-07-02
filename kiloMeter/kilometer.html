@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kilometer.css" type="text/css">
+    <title>kilometer</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Meter to Kilometer</h2>
+
+<div class="inputbox">
+    <input type="number" id="input" class="box" placeholder="meter">
+</div>
+
+<div class="btn">
+    <button type="submit" id="btn1" onclick="convert( )">Convert to Km</button>
+</div>
+
+<div id="result">
+
+</div>
+
+    </div>
+
+
+    <script>
+       function convert(){
+        let meter = ( Number(document.getElementById("input").value))
+        let km = meter/1000 
+        let result = document.getElementById("result")
+        result.innerHTML = ` ${km} Km`
+       }
+       
+       
+
+    </script>
+    
+</body>
+</html>
